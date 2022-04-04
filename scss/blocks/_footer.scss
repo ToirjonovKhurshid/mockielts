@@ -20,16 +20,23 @@
             display: block;
 
             &-list {
-                @include list-style;
+                @include list-unstyled;
 
                 li {
                     margin: 0px 0px 13px 0px;
-
-                    
                 }
                 a {
                     font-weight: 800;
                     color: #7e90a2;
+                    @include td;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    font-family: $nunito;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        color: #fff
+                    }
                 }
             }
         }
@@ -52,5 +59,89 @@
     }
     &-context {
         width: 75%;
+    }
+
+    &__currency-block {
+        display: block;
+        clear: both;
+
+        .currency-selectpicker {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            width: 0.5px;
+            height: 100%;
+            padding: 0;
+            opacity: 0;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+
+    &__dropdown-toggle {
+        position: relative;
+        margin-top: 25px;
+        width: 160px;
+        height: 46px;
+        display: block;
+        margin-bottom: 10px;
+        line-height: 46px;
+        border-radius: 4px;
+        border: solid 1px #cccccc;
+        background-color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: "Montserrat",Helvetica,Arial,sans-serif;
+        color: #284664;
+        padding: 0 12px;
+        cursor: pointer;
+
+        .filter-option {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: inherit;
+            padding-right: inherit;
+            padding-bottom: inherit;
+            padding-left: inherit;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+            .filter-option-inner {
+                padding-right: 25px;
+
+                &-inner {
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .bs-caret {
+            line-height: 46px;
+            font-size: 13px;
+            font-weight: bold;
+            @include monsterrat;
+            color: #284664;
+            text-align: right;
+            white-space: nowrap;
+
+            .caret {
+                position: absolute;
+                display: inline-block;
+                top: 50%;
+                right: 12px;
+                margin-top: -2px;
+                vertical-align: middle;
+                width: 14px;
+                height: 8px;
+                background: url(../../images/arrow_expand_module.png) center no-repeat;
+                border: none;
+                margin-top: -4px;
+                transition: all ease 0.2s;
+            }
+        }
     }
 }
