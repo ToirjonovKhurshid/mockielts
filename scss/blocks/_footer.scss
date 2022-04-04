@@ -11,6 +11,8 @@
         @include flex-row;
         margin-right: -15px;
         margin-left: -15px;
+        align-items: flex-start;
+
     }
 
     &-navigation {
@@ -141,6 +143,101 @@
                 border: none;
                 margin-top: -4px;
                 transition: all ease 0.2s;
+            }
+        }
+    }
+
+    &-context {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 75%;
+    }
+
+    &-aboutus__field {
+        h3 {
+            margin: 0px 0px 0px 0px;
+            color: #fff;
+            font-weight: 700;
+            font-family: "Montserrat",Helvetica,Arial,sans-serif;
+            line-height: 1.2;
+            font-style: 20px;
+        }
+        p {
+            margin: 10px 20px 15px 0px;
+            text-align: justify;
+            color: #fff;
+            font-size: 16px;
+            @include nunito;
+            line-height: 1.5;
+            
+        }
+    }
+
+    .follow-us {
+        margin: 10px 0px 0px 0px;
+
+        span {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0px 20px 0px 0px;
+            font-family: "Montserrat",Helvetica,Arial,sans-serif;
+        }
+    }
+
+    &-followus {
+        @include flex-row;
+    }
+
+
+
+    &__social-links {
+        position: relative;
+        
+        ul {
+            @include list-unstyled;
+            @include flex-row;
+            gap: 15px;
+            li {
+                a {
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    transition: all ease 0.2s;
+                    border-radius: 50%;
+                    color: #284664;
+                    text-align: center;
+                    line-height: 25px;
+                    background-color: #fff;
+                    margin: 3px 2px 0;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .copy-right {
+        position: relative;
+        cursor: default;
+
+        p {
+            font-size: 12px;
+            color: #d9d9d9;
+            margin: 45px 0px 15px 0px;
+            @include nunito;
+        }
+
+        .copy-right__content {
+            p, a {
+                font-size: 12px;
+                color: #d9d9d9;
+                margin: 0 0 10px;
+                @include nunito;
+                @include td;
             }
         }
     }
