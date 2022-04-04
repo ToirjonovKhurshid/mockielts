@@ -1,0 +1,84 @@
+.contact {
+    background-color: $f7f;
+    padding: 60px 0px;
+    &-box {
+        max-width: 350px;
+        margin: 0px auto 40px auto;
+    }
+
+    &-title {
+        @include section-title;
+        margin: 0px 0px 20px 0px;
+        span {
+            line-height: 1.5;
+        }
+    }
+
+    &-field {
+        margin: 0px 0px 10px 0px;
+
+        .contact-youare,
+        .contact-about {
+            border: 1px solid #284664;
+            width: 100%;
+            padding: 0 0 0 10px;
+            height: 30px;
+            font-size: 12px;
+            border-radius: 3px;
+            font-family: inherit;
+            line-height: inherit;
+            text-transform: none;
+        }
+
+        & input {
+            border: 1px solid #284664;
+            width: 100%;
+            padding: 0px 10px;
+            height: 30px;
+            font-size: 12px;
+            border-radius: 3px;
+
+            &[type=text] {
+                appearance: none;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        & textarea {
+            border: 1px solid #284664;
+            width: 100%;
+            padding: 8px 10px;
+            height: 170px;
+            font-size: 12px;
+            border-radius: 3px;
+            overflow: auto;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        & .contact-btn {
+            height: 50px;
+            line-height: 50px;
+            border-radius: 3px;
+            width: 100%;
+            display: block;
+            background-color: #284664;
+            font-size: 13px;
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            transition: all .2s ease;
+            
+            &:hover {
+                opacity: 0.9;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,56 @@
+.footer {
+    margin: 0;
+    position: relative;
+    background-color: #284664;
+
+    &-content{
+        padding: 40px 0px 20px 0px;
+    }
+
+    &-row {
+        @include flex-row;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    &-navigation {
+        width: 25%;
+
+        .navigation {
+            display: block;
+
+            &-list {
+                @include list-style;
+
+                li {
+                    margin: 0px 0px 13px 0px;
+
+                    
+                }
+                a {
+                    font-weight: 800;
+                    color: #7e90a2;
+                }
+            }
+        }
+
+        .visually-hidden {
+            position: absolute !important;
+            overflow: hidden;
+            clip: rect(1px,1px,1px,1px);
+            width: 1px;
+            height: 1px;
+            word-wrap: normal;
+            line-height: 1.2;
+            font-family: "Montserrat",Helvetica,Arial,sans-serif;
+            font-weight: 700;
+            color: #284664;
+            font-size: 26px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+    &-context {
+        width: 75%;
+    }
+}

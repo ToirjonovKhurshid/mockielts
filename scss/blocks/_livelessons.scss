@@ -1,0 +1,324 @@
+.livelessons {
+  h2 {
+    margin: 65px 0 11px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.35;
+    letter-spacing: 0.3px;
+    color: #284664;
+    position: relative;
+    display: inline-block;
+
+    span {
+      position: absolute;
+      right: -38px;
+      top: -6px;
+      font-size: 9px;
+      font-weight: 800;
+      width: 40px;
+      height: 15px;
+      line-height: 16px;
+      border-radius: 8px;
+      background-color: #faaa5a;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .caption {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: #284664;
+    margin-bottom: 54px;
+  }
+
+  &__cards {
+    @include flex-row;
+    margin-left: -11px;
+    margin-right: -11px;
+  }
+
+  .cards {
+    width: 33.3%;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    &-items {
+      border: 2px solid #c7c7c7;
+      border-radius: 4px;
+      border-top-left-radius: 0;
+      transition: all 0.2s ease-out;
+      position: relative;
+      background: #fff;
+    }
+
+    &-type {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 500;
+      left: -2px;
+      top: -30px;
+      height: 30px;
+      line-height: 30px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      background-color: #284664;
+      padding: 0 15px;
+      width: 100%;
+      max-width: 166px;
+      color: #fff;
+      z-index: 9;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    &-img {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border-top-right-radius: 1px;
+      padding-bottom: 57%;
+
+      &:hover .cards-img__main {
+        transform: scale(1.03);
+      }
+
+      &__main {
+        transition: all ease-out 0.2s;
+        position: absolute;
+        z-index: 0;
+      }
+    }
+
+    &-label {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 73px;
+      height: 73px;
+      line-height: 73px;
+      z-index: 9;
+
+      img {
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        z-index: 9;
+      }
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 73px solid #faaa5a;
+        border-left: 73px solid transparent;
+        position: absolute;
+        border-bottom: 73px solid #32b4c8;
+      }
+    }
+
+    &-abroad {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 73px;
+      height: 73px;
+      line-height: 73px;
+      z-index: 9;
+
+      img {
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        z-index: 9;
+      }
+
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 73px solid transparent;
+        position: absolute;
+        border-bottom: 73px solid #284664;
+      }
+    }
+
+    &-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      padding: 0 20px 0 30px;
+      z-index: 3;
+
+      h3 {
+        font-size: 26px;
+        line-height: 1.35;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        margin-top: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        @include monsterrat;
+        font-weight: 700;
+      }
+
+      div {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.63;
+        letter-spacing: 0.5px;
+        color: #faaa5a;
+      }
+    }
+
+    &-info {
+      padding: 28px 30px 26px;
+      ul {
+        @include list-unstyled;
+        min-height: 180px;
+        margin-bottom: 20px;
+
+        li {
+          letter-spacing: 0.2px;
+          color: #284664;
+          margin-bottom: 20px;
+          position: relative;
+          @include flex-row;
+
+          i {
+            line-height: 1;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #f9a95a;
+          }
+
+          p {
+            padding-left: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.25;
+            @include nunito;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &-join {
+      width: 100%;
+      max-width: none;
+
+      em {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.79;
+        font-style: normal;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 40px;
+        @include monsterrat;
+        text-decoration: none;
+      }
+    }
+
+    &-btn {
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      line-height: 1.79;
+      letter-spacing: 0.4px;
+      text-align: center;
+      color: #ffffff;
+      display: inline-block;
+      width: 100%;
+      max-width: 100%;
+      height: 40px;
+      line-height: 40px;
+      @include monsterrat;
+      transition: all ease 0.2s;
+      border-radius: 4px;
+    }
+
+    .listening {
+      border: 2px solid #32b4c8;
+
+      .cards-type {
+        background-color: #32b4c8;
+      }
+
+      &:hover {
+        box-shadow: 0px 1px 8px 0px #32b4c8;
+      }
+
+      &-btn {
+        background-color: #32b4c8;
+
+        &:hover {
+          background-color: #47bbcd;
+        }
+      }
+    }
+
+    .abroad {
+      border: 2px solid #284664;
+
+      .cards-type {
+        background-color: #284664;
+      }
+
+      &:hover {
+        box-shadow: 0px 1px 8px 0px #284664;
+      }
+
+      &-btn {
+        background-color: #284664;
+
+        &:hover {
+          background-color: #2f5376;
+        }
+      }
+    }
+  }
+
+  &-btn {
+    margin: 28px auto 31px;
+    display: block;
+    width: 100%;
+    max-width: 211px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #cccccc;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    transition: all ease 0.2s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #284664;
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.partners {
+  padding: 60px 0px;
+
+  &-row {
+    @include flex-row;
+    justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  &-content,
+  &-logos {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &-content {
+    width: 41.66666667%;
+
+    &__info {
+      padding-right: 60px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #282828;
+      @include nunito;
+
+      &-title {
+        @include section-title;
+        margin: 0px 0px 20px 0px;
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #282828;
+        @include nunito;
+
+        p {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
+  &-logos {
+    width: 58.33333333%;
+
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    &__items {
+      width: 33.33%;
+      float: left;
+      height: 125px;
+
+      img {
+        padding: 10px;
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+}

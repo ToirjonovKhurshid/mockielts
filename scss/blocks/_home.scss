@@ -1,0 +1,629 @@
+.hero {
+  @include section;
+  text-align: center;
+  background-color: #284664;
+  background-image: url(../../images/hero-banner.jpg);
+  @include bg;
+  background-position: center center;
+  overflow: hidden;
+
+  & > .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &-inner {
+    position: relative;
+    padding: 58px 0px 105px;
+    @include flex-row;
+
+    &__col-left,
+    &__col-right {
+      width: 50%;
+      padding: 0 10px;
+    }
+
+    &__col-left {
+      text-align: left;
+    }
+
+    &__title {
+      @include monsterrat;
+      font-size: 46px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: $e8e;
+      margin: 0 0 21px;
+
+      strong {
+        font-weight: 900;
+        display: block;
+      }
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #32b4c8;
+      margin: 0 0 27px;
+      @include nunito;
+
+      strong {
+        font-weight: 800;
+        color: #e8e8e8;
+      }
+    }
+
+    &__more-info {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.67;
+      letter-spacing: 0.23px;
+      color: #f3f3f3;
+      margin-bottom: 29px;
+      @include flex-row;
+    }
+
+    &__students-group {
+      margin-right: 10px;
+      max-width: 50px;
+    }
+
+    &__btn {
+      line-height: 58px;
+      border-radius: 28.5px;
+      background-color: #faaa5a;
+      font-family: "Montserrat", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.44px;
+      text-align: center;
+      color: #284664;
+      transition: all ease 0.2s;
+      border: none;
+      padding: 20.5px 40px;
+      cursor: pointer;
+    }
+
+    &__col-right {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+
+      .animation-box {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        &__arrow {
+          position: absolute;
+          top: 6%;
+          left: 39%;
+          animation-name: moveArrow;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-timing-function: ease;
+        }
+
+        &__person {
+          position: absolute;
+          top: 6%;
+          left: 39%;
+          animation-name: movePerson;
+          animation-duration: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease;
+          animation-delay: 1.5s;
+          animation-fill-mode: both;
+          animation-timing-function: ease;
+        }
+
+        &__arrow.-arrow-1 {
+          top: 43.1%;
+          left: 28.1%;
+          animation-duration: 1.5s;
+          animation-delay: 1.5s;
+        }
+
+        &__arrow.-arrow-2 {
+          top: 65.6%;
+          left: 10.9%;
+          animation-duration: 2s;
+          animation-delay: 1s;
+          z-index: 8;
+        }
+
+        &__arrow.-arrow-3 {
+          top: 60.5%;
+          left: 59.1%;
+          animation-duration: 2s;
+          animation-delay: 1s;
+        }
+
+        &__arrow.-arrow-4 {
+          top: 40.4%;
+          left: 62.1%;
+          animation-duration: 2.2s;
+          animation-delay: 1s;
+        }
+
+        &__arrow.-arrow-6 {
+          top: 39.5%;
+          left: 23.9%;
+          animation-duration: 2s;
+          animation-delay: 1s;
+        }
+
+        &__arrow.-arrow-7 {
+          top: 56.8%;
+          left: 40%;
+          animation-duration: 2s;
+          animation-delay: 1.5s;
+        }
+
+        &__arrow.-arrow-9 {
+          top: 34.7%;
+          left: 53.6%;
+          animation-duration: 2s;
+          animation-delay: 1s;
+        }
+
+        &__arrow.-arrow-11 {
+          top: 75%;
+          left: 40.2%;
+          animation-duration: 2s;
+          animation-delay: 1s;
+        }
+
+        &__line {
+          position: absolute;
+          animation-name: moveLine;
+          animation-duration: 3.5s;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-delay: 2s;
+          animation-iteration-count: infinite;
+        }
+
+        &__line.-line-1 {
+          top: 46%;
+          left: 18%;
+          -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+        }
+        &__line.-line-2 {
+          top: 33.5%;
+          left: 30.2%;
+          animation-delay: 1.2s;
+          animation-duration: 3s;
+        }
+        &__line.-line-3 {
+          top: 31.3%;
+          left: 31.1%;
+          animation-delay: 1.4s;
+        }
+        &__line.-line-4 {
+          top: 19%;
+          left: 32%;
+          animation-delay: 1.6s;
+        }
+        &__line.-line-5 {
+          top: 8%;
+          left: 61%;
+          animation-delay: 1s;
+          animation-duration: 3s;
+        }
+        &__line.-line-6 {
+          top: 32.7%;
+          left: 60%;
+          animation-delay: 1.2s;
+        }
+        &__line.-line-7 {
+          top: 43.1%;
+          left: 72%;
+          animation-delay: 1.8s;
+        }
+        &__line.-line-8 {
+          top: 76.1%;
+          left: 48%;
+          animation-delay: 1.6s;
+        }
+        &__line.-line-9 {
+          top: 47.6%;
+          left: 10.8%;
+          animation-delay: 1s;
+          animation-duration: 3s;
+        }
+        &__line.-line-10 {
+          top: 44.6%;
+          left: 64.8%;
+          animation-delay: 1.4s;
+        }
+        &__line.-line-11 {
+          top: 9.4%;
+          left: 53%;
+          animation-delay: 1.6s;
+        }
+        &__line.-line-12 {
+          top: 72%;
+          left: 41%;
+          animation-delay: 1s;
+        }
+      }
+    }
+  }
+}
+
+// animation text
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// animation subtitle
+
+.fadeInSub {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 1.3s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// animation users info
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1.6s;
+  animation-fill-mode: both;
+  animation-delay: 1.2s;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+// fadeInUpBtn
+.fadeInUpBtn {
+  animation-name: fadeInUpBtn;
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+  animation-delay: 1.6s;
+}
+@-webkit-keyframes fadeInUpBtn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInUpBtn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.movePerson {
+  animation-name: movePerson;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+@-webkit-keyframes movePerson {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-80%, 50%, 0);
+    transform: translate3d(-80%, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes movePerson {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-80%, 50%, 0);
+    transform: translate3d(-80%, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.moveArrow {
+  animation-name: moveArrow;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-delay: 1.5s;
+}
+@-webkit-keyframes moveArrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-80%, 50%, 0);
+    transform: translate3d(-80%, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes moveArrow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-80%, 50%, 0);
+    transform: translate3d(-80%, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*arrow lines*/
+
+.arrowMoveRepeat2 {
+  position: relative;
+  animation: arrowMoveDistance 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(150%, -150%);
+  }
+}
+
+.arrowMoveRepeat3 {
+  position: relative;
+  animation: arrowMoveDistance3 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(150%, -150%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(300%, -300%);
+  }
+}
+
+.arrowMoveRepeat4 {
+  position: relative;
+  animation: arrowMoveDistance4 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance4 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200%, -200%);
+  }
+}
+
+.arrowMoveRepeat6 {
+  position: relative;
+  animation: arrowMoveDistance6 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance6 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200%, -200%);
+  }
+}
+
+.arrowMoveRepeat7 {
+  position: relative;
+  animation: arrowMoveDistance7 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance7 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200%, -200%);
+  }
+}
+
+.arrowMoveRepeat8 {
+  position: relative;
+  animation: arrowMoveDistance8 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance8 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200%, -200%);
+  }
+}
+
+.arrowMoveRepeat11 {
+  position: relative;
+  animation: arrowMoveDistance11 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance11 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(250%, -250%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(500%, -500%);
+  }
+}
+
+.arrowMoveRepeat13 {
+  position: relative;
+  animation: arrowMoveDistance13 6s infinite linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes arrowMoveDistance13 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(100%, -100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(200%, -200%);
+  }
+}
+
+// @keyframes moveLine {
+//   0% {
+//     width: 0%;
+//     transform: translate(0);
+//   }
+//   100% {
+//     width: 100%;
+//     transform: translate(0);
+//   }
+// }
+// @media only screen and (max-width: 992px) {
+//   .container {
+//     width: 970px;
+//     border: 2px solid red;
+//   }
+// }

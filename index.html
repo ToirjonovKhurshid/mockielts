@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS Online Practice Tests</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- flexboxgrid link -->
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="ielts-logo">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div class="header-mobile">
+          <div class="ielts-logo mobile">
+            <a href="#">
+              <img src="./images/logo_mobile.svg" alt="logo_mobile" />
+            </a>
+          </div>
+          <div class="header-mobile__icons">
+            <div class="nav-notifications">
+              <a href="#">
+                <span><em class="number"></em></span>
+              </a>
+            </div>
+            <div class="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <div class="navigation">
+      <nav class="navigation-menu">
+        <div class="container">
+          <div class="region region-menubar">
+            <div class="header-nav">
+              <ul class="header-nav__main-menu main-menu">
+                <li class="main-menu__item">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    IELTS Exam Library
+                    <span class="main-menu__arrow"></span>
+                  </a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <ul>
+                        <li>
+                          <a href="/ielts-exam-library#academic"
+                            >Academic Tests</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >General Training Tests
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    IELTS Tips
+                    <span class="main-menu__arrow"></span>
+                  </a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <ul>
+                        <li>
+                          <a href="/ielts-exam-library#academic"
+                            >Listening tips</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >Reading Tips
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#academic"
+                            >Speaking Tips</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >Writing Tips
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >Announcements
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    IELTS Prep
+                    <span class="main-menu__arrow"></span>
+                  </a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <ul>
+                        <li>
+                          <a href="/ielts-exam-library#academic"
+                            >IELTS Listening Service
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >IELTS Reading Service
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#academic"
+                            >Writing Correction Service
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >IELTS Speaking mock test
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/ielts-exam-library#general-training"
+                            >IELTS Explained Videos
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    Live Lessons
+                  </a>
+                </li>
+                <li class="main-menu__item" style="display: none">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    IELTS courses
+                  </a>
+                </li>
+                <li class="main-menu__item" style="display: none">
+                  <a
+                    href="/ielts-exam-library"
+                    data-drupal-selector="menu-item-main"
+                  >
+                    IELTS courses
+                    <h6 class="badge badge-notify">new</h6>
+                  </a>
+                </li>
+              </ul>
+              <ul class="header-nav__reg">
+                <li class="main-menu__item item-reg li-login">
+                  <a href="#">Sign up</a>
+                </li>
+                <li class="main-menu__item item-reg li-login">
+                  <a href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner clearfix">
+            <div class="hero-inner__col-left">
+              <h1 class="hero-inner__title fadeIn">
+                WE TAKE YOUR <br />
+                <strong>IELTS SCORE HIGHER</strong>
+              </h1>
+              <p class="hero-inner__subtitle fadeInSub">
+                Keep the COVID-19 away, get ready for your 2022 IELTS exam by
+                practicing our 100+ IELTS mock tests <strong>for FREE</strong>
+              </p>
+              <div class="hero-inner__more-info fadeInUp">
+                <img
+                  class="hero-inner__students-group"
+                  src="./images/students-group.png"
+                  alt="students-group"
+                />
+                <p>and 1,000,000+ students are also using our free services.</p>
+              </div>
+              <a class="hero-inner__btn fadeInUpBtn">START NOW</a>
+            </div>
+            <div class="hero-inner__col-right">
+              <div class="hero-inner__animation animation-box">
+                <div class="animation-box__person movePerson">
+                  <img src="./images/hero-person.svg" alt="hero-person" />
+                </div>
+                <div class="animation-box__arrow -arrow-1 moveArrowLine">
+                  <img src="./images/hero-arrow-1.svg" alt="hero-arrow-1" />
+                </div>
+                <div class="animation-box__arrow -arrow-2">
+                  <img
+                    class="arrowMoveRepeat2"
+                    src="./images/hero-arrow-2.svg"
+                    alt="hero-arrow-2"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-3">
+                  <img
+                    class="arrowMoveRepeat3"
+                    src="./images/hero-arrow-3.svg"
+                    alt="hero-arrow-3"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-4">
+                  <img
+                    class="arrowMoveRepeat4"
+                    src="./images/hero-arrow-4.svg"
+                    alt="hero-arrow-4"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-6">
+                  <img
+                    class="arrowMoveRepeat6"
+                    src="./images/hero-arrow-6.svg"
+                    alt="hero-arrow-7"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-7">
+                  <img
+                    class="arrowMoveRepeat7"
+                    src="./images/hero-arrow-7.svg"
+                    alt="hero-arrow-7"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-9">
+                  <img
+                    class="arrowMoveRepeat8"
+                    src="./images/hero-arrow-8.svg"
+                    alt="hero-arrow-9"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-11">
+                  <img
+                    class="arrowMoveRepeat11"
+                    src="./images/hero-arrow-9.svg"
+                    alt="hero-arrow-11"
+                  />
+                </div>
+                <div class="animation-box__arrow -arrow-13">
+                  <img
+                    class="arrowMoveRepeat13"
+                    src="./images/hero-arrow-10.svg"
+                    alt="hero-arrow-13"
+                  />
+                </div>
+                <div class="animation-box__line -line-1">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-2">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-3">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-4">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-5">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-6">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-7">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-8">
+                  <img src="./images/hero-line-1.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-9">
+                  <img src="./images/hero-line-2.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-10">
+                  <img src="./images/hero-line-2.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-11">
+                  <img src="./images/hero-line-2.svg" alt="" />
+                </div>
+                <div class="animation-box__line -line-12">
+                  <img src="./images/hero-line-3.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="region region-content-middle">
+        <section id="block-webinarhomeblock" class="livelessons clearfix">
+          <div class="container">
+            <h2>
+              Join our live lessons for advice from the experts
+              <span>new</span>
+            </h2>
+            <p class="caption">
+              Build your confidence in all IELTS skills and prepare for studying
+              abroad with our daily live lessons
+            </p>
+            <div class="livelessons__cards">
+              <div class="cards">
+                <div class="cards-items listening">
+                  <div class="cards-type">Listening</div>
+                  <a href="#" class="cards-img">
+                    <span class="cards-label">
+                      <img src="./images/card-label.png" alt="card-label" />
+                    </span>
+                    <img
+                      class="cards-img__main"
+                      src="./images/card_shutterstock.jpg"
+                      alt="shutterstock"
+                    />
+                    <div class="cards-title">
+                      <h3>Improve Your IELTS Listening: Part 1 & 2</h3>
+                      <div class="cards-author">Daniel H.</div>
+                    </div>
+                  </a>
+                  <div class="cards-info">
+                    <ul>
+                      <li class="date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>04/04/2022</p>
+                      </li>
+                      <li class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>17:00 - 18:00 (GMT +5)</p>
+                      </li>
+                      <li class="attending">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>1,050+ Attending</p>
+                      </li>
+                      <li class="language">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>English</p>
+                      </li>
+                      <li class="cost">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <p>Free</p>
+                      </li>
+                    </ul>
+                    <a class="cards-join cards-btn listening-btn" href="#">
+                      <em>Join</em>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="cards-items abroad">
+                  <div class="cards-type">Study abroad</div>
+                  <a href="#" class="cards-img">
+                    <span class="cards-abroad">
+                      <img src="./images/card-label2.png" alt="card-label" />
+                    </span>
+                    <img
+                      class="cards-img__main"
+                      src="./images/card_shutterstock3.jpg"
+                      alt="shutterstock"
+                    />
+                    <div class="cards-title">
+                      <h3>Hospitality - your career opportunities in the UK</h3>
+                      <div class="cards-author">Ms. Xuan Le</div>
+                    </div>
+                  </a>
+                  <div class="cards-info">
+                    <ul>
+                      <li class="date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>04/04/2022</p>
+                      </li>
+                      <li class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>17:00 - 18:00 (GMT +5)</p>
+                      </li>
+                      <li class="attending">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>1,050+ Attending</p>
+                      </li>
+                      <li class="language">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>English</p>
+                      </li>
+                      <li class="cost">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <p>Free</p>
+                      </li>
+                    </ul>
+                    <a class="cards-join cards-btn abroad-btn" href="#">
+                      <em>Join</em>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="cards-items abroad">
+                  <div class="cards-type">Study abroad</div>
+                  <a href="#" class="cards-img">
+                    <span class="cards-abroad">
+                      <img src="./images/card-label2.png" alt="card-label" />
+                    </span>
+                    <img
+                      class="cards-img__main"
+                      src="./images/card_shutterstock2.jpg"
+                      alt="shutterstock"
+                    />
+                    <div class="cards-title">
+                      <h3>Campus vs City University</h3>
+                      <div class="cards-author">Alice Crichton</div>
+                    </div>
+                  </a>
+                  <div class="cards-info">
+                    <ul>
+                      <li class="date">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>04/04/2022</p>
+                      </li>
+                      <li class="time">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>17:00 - 18:00 (GMT +5)</p>
+                      </li>
+                      <li class="attending">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>1,050+ Attending</p>
+                      </li>
+                      <li class="language">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>English</p>
+                      </li>
+                      <li class="cost">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <p>Free</p>
+                      </li>
+                    </ul>
+                    <a class="cards-join cards-btn abroad-btn" href="#">
+                      <em>Join</em>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="livelessons-btn exp-btn" href="#">Explore More</a>
+          </div>
+        </section>
+
+        <section id="block-latestcollection-2" class="mocktests clearfix">
+          <div class="container">
+            <div class="mocktests__title">
+              <span>Latest IELTS test releases: </span>
+            </div>
+            <div class="mocktests__book">
+              <div class="book-row">
+                <div class="book__cards">
+                  <div class="book-items">
+                    <a href="#">
+                      <img src="./images/mock-cover.jpg" alt="mock-cover" />
+                    </a>
+                    <h3><a href="#">IELTS Recent Mock Tests Volume 6</a></h3>
+                    <div class="book-items__vote tests">
+                      <div class="star-rating" title="75%">
+                        <span class="rating-point">4.7</span>
+                        <div class="back-star">
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                        </div>
+                        <em>(4712 votes)</em>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="book__cards">
+                  <div class="book-items">
+                    <a href="#">
+                      <img src="./images/mock-cover2.jpg" alt="mock-cover" />
+                    </a>
+                    <h3>
+                      <a href="#">ELTS Mock Test 2022 March</a>
+                    </h3>
+                    <div class="book-items__vote tests">
+                      <div class="star-rating" title="75%">
+                        <span class="rating-point">4.7</span>
+                        <div class="back-star">
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                        </div>
+                        <em>(4712 votes)</em>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="book__cards">
+                  <div class="book-items">
+                    <a href="#">
+                      <img src="./images/mock-cover3.jpg" alt="mock-cover" />
+                    </a>
+                    <h3><a href="#">IELTS Practice Test Volume 8</a></h3>
+                    <div class="book-items__vote tests">
+                      <div class="star-rating" title="75%">
+                        <span class="rating-point">4.7</span>
+                        <div class="back-star">
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                        </div>
+                        <em>(4712 votes)</em>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="book__cards">
+                  <div class="book-items">
+                    <a href="#">
+                      <img src="./images/mock-cover4.png" alt="mock-cover" />
+                    </a>
+                    <h3>
+                      <a href="#"
+                        >Prepare for IELTS General Training Volume 2</a
+                      >
+                    </h3>
+                    <div class="book-items__vote tests">
+                      <div class="star-rating" title="75%">
+                        <span class="rating-point">4.7</span>
+                        <div class="back-star">
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                          <a class="rate-fivestar" href="#"
+                            ><i class="fa-solid fa-star"></i
+                          ></a>
+                        </div>
+                        <em>(4712 votes)</em>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tips clearfix">
+          <div class="container">
+            <div class="tips-oftheday">
+              <p class="tips-caption">IELTS tip of the day:</p>
+              <div class="tips-news clearfix">
+                <div class="tips-wrap">
+                  <a href="#"
+                    ><img src="./images/pronunciation.png" alt="pronunciation"
+                  /></a>
+                </div>
+                <div class="tips-content">
+                  <h3><a href="#">How To Improve Your Pronunciation</a></h3>
+                  <div class="tips-content__rating">
+                    <div class="star-rating" title="75%">
+                      <span class="rating-point">4.7</span>
+                      <div class="back-star">
+                        <a class="rate-fivestar" href="#"
+                          ><i class="fa-solid fa-star"></i
+                        ></a>
+                        <a class="rate-fivestar" href="#"
+                          ><i class="fa-solid fa-star"></i
+                        ></a>
+                        <a class="rate-fivestar" href="#"
+                          ><i class="fa-solid fa-star"></i
+                        ></a>
+                        <a class="rate-fivestar" href="#"
+                          ><i class="fa-solid fa-star"></i
+                        ></a>
+                        <a class="rate-fivestar" href="#"
+                          ><i class="fa-solid fa-star"></i
+                        ></a>
+                      </div>
+                      <em>(4712 votes)</em>
+                    </div>
+                  </div>
+
+                  <p>
+                    If you are learning the English language, accurate
+                    pronunciation is very important. Regardless of how good your
+                    English is grammatical, it is...
+                  </p>
+
+                  <a href="#" class="tips-content__tag">
+                    <em></em> Speaking Tips
+                  </a>
+
+                  <div class="tips-content__data">
+                    <p class="hidden-xs">
+                      <span class="icon-ts icon-view"></span>
+                      13,136
+                    </p>
+                    <p>
+                      <span class="icon-ts icon-calendar"></span>
+                      07 Dec 2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages clearfix">
+          <div class="container">
+            <div class="advantages-caption">
+              <span>Why use IELTS Online Tests?</span>
+            </div>
+            <div class="advantages-row">
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h2.png" alt="icon_cards" />
+                  </div>
+                  <h3>Take recent actual IELTS Tests</h3>
+                  <p>
+                    Real IELTS Listening and IELTS Reading tests based on actual
+                    IELTS tests and following the Cambridge IELTS book format.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h8.png" alt="icon_cards" />
+                  </div>
+                  <h3>Community-driven</h3>
+                  <p>
+                    Created by our community of IELTS teachers, previous IELTS
+                    examiners and IELTS exam takers.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h5.png" alt="icon_cards" />
+                  </div>
+                  <h3>Comprehensive analytics tool</h3>
+                  <p>
+                    Our IELTS Analytics is a tool that allow you to set a target
+                    IELTS band score, analyse your progress, find how to
+                    improve.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h3.png" alt="icon_cards" />
+                  </div>
+                  <h3>View IELTS Score and Answer Explanations</h3>
+                  <p>
+                    After taking our IELTS mock tests with real audio, you can
+                    check your Listening or Reading band score and view your
+                    answer sheets.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h6.png" alt="icon_cards" />
+                  </div>
+                  <h3>FREE to use</h3>
+                  <p>
+                    Our online IELTS tests are always free. We are here to help
+                    users for study abroad, immigration and finding jobs.
+                  </p>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h1.png" alt="icon_cards" />
+                  </div>
+                  <h3>Increase your IELTS band score</h3>
+                  <p>
+                    Using our online tests for IELTS preparation is proven to
+                    help students improve by 0.5 - 1.5 .
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="statistics clearfix">
+          <div class="container">
+            <div class="statistics-caption">
+              <span>Number #1 for IELTS Preparation</span>
+            </div>
+            <div class="statistics-row">
+              <div class="statistics-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h7.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>120+</h3>
+                    <p>Countries</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h9.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>4.000.000+</h3>
+                    <p>Test Takers</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h10.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>7.000.000+</h3>
+                    <p>Completed Tests</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h11.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>100+</h3>
+                    <p>Academic Tests</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h12.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>20+</h3>
+                    <p>General Training Tests</p>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-items">
+                <div class="item-cards">
+                  <div class="cards-icon">
+                    <img src="./images/icon_h13.png" alt="icon_cards" />
+                  </div>
+                  <div class="cards-content">
+                    <h3>10,000+</h3>
+                    <p>Total Questions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="partners clearfix">
+          <div class="container">
+            <div class="partners-row">
+              <div class="partners-content">
+                <div class="partners-content__info">
+                  <div class="partners-content__info-title">
+                    <span>We work with the best partners</span>
+                  </div>
+                  <div class="partners-content__info-text">
+                    <p>
+                      IeltsOnlineTests works with universities, NGOs and other
+                      international associations to facilitate international
+                      education. We encourage international mobility through a
+                      shared passion for education, charitable endeavours and
+                      the nurturing of international talent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="partners-logos">
+                <div class="partners-logos__row">
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners.png"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners2.png"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners3.svg"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners4.svg"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners5.png"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                  <div class="partners-logos__items">
+                    <img
+                      src="./images/partners6.jpg"
+                      alt="partners-logos__imgs"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="container">
+            <div class="contact-box">
+              <div class="error-message main"></div>
+              <form id="contact-form" method="post" enctype="multipart/form-data">
+                <div class="contact-title">
+                  <span>Contact us</span>
+                </div>
+                <div class="contact-field">
+                  <select name="youare" id="youare" class="contact-youare" required>
+                    <option value>--You are--</option>
+                    <option value="Student">Student</option>
+                    <option value="IELTS Teacher/Examiner">IELTS Teacher/Examiner</option>
+                    <option value="IELTS/Teaching Centre">IELTS/Teaching Centre</option>
+                    <option value="Potential Partner">Potential Partner</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <select name="about" id="about" class="contact-about"></select>
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <input type="text" required name="tellusmore" id="tell-us-more" class="tell-us-more" placeholder="Tell us more">
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <input type="text" required name="name" id="contact-name" class="contact-name" placeholder="Name">
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <input type="email" required name="email" id="contact-email" class="contact-email" placeholder="Email">
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <input type="email" required name="Title" class="contact-inptitle" placeholder="Title">
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <textarea class="contact-message" required placeholder="Message" id="contact_message" cols="30" rows="10"></textarea>
+                  <!-- <div class="error-message contact-youare"></div> -->
+                </div>
+                <div class="contact-field">
+                  <button class="contact-btn" type="submit">Send</button>
+                  <img class="preloader" style="display: none;" width="50" height="50" src="./images/preloader.gif" alt="preloader">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="footer clearfix">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-navigation">
+              <nav class="navigation" role="navigation" aria-labelledby="block-footermenu-menu" id="block-footermenu">
+                <h2 class="visually-hidden">Footer menu</h2>
+                <ul class="navigation-list">
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Site Map</a></li>
+                  <li><a href="#">Frequently Asked Questions</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-context"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

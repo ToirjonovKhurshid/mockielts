@@ -1,0 +1,62 @@
+.statistics {
+  padding: 60px 0px;
+
+  &-caption {
+    color: #284664;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    @include monsterrat;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  &-items {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 33.3%;
+  }
+
+  .item-cards {
+    @include flex-row;
+    align-items: center;
+    padding: 0px 0px 0px 80px;
+    min-height: 60px;
+    margin: 30px 0px;
+  }
+
+  .cards-content {
+    text-align: start;
+    h3 {
+      font-size: 30px;
+      color: #404040;
+      font-weight: 300;
+      margin: 0px;
+    }
+
+    p {
+      display: block;
+      font-weight: 700;
+      color: #284664;
+      @include monsterrat;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+
+  .cards-icon {
+    width: 80px;
+    float: left;
+    margin: 10px 0px 0px -80px;
+    text-align: left;
+  }
+}

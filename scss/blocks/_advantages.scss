@@ -1,0 +1,57 @@
+.advantages {
+  padding: 60px 0px;
+
+  &-caption {
+    color: #284664;
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    @include monsterrat;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  &-items {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 33.3%;
+  }
+
+  .item-cards {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 10px;
+
+    h3 {
+      font-weight: 700;
+      color: #284664;
+      min-height: 30px;
+      line-height: 1.2;
+      @include monsterrat;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.5;
+      color: #282828;
+      @include nunito;
+      font-size: 13px;
+      margin: 0 0 10px;
+    }
+  }
+
+  .cards-icon {
+    min-height: 55px;
+  }
+}
