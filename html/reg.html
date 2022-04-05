@@ -20,10 +20,32 @@
     <!-- flexboxgrid link -->
     <link rel="stylesheet" href="css/flexboxgrid.min.css" />
 
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    
+    <section class="login login-page">
+      <div class="container">
+        <a href="../index.html">
+          <img src="../images/logo.svg" alt="logo">
+        </a>
+        <h1>CREATE AN ACCOUNT</h1>
+        <div class="login-content">
+          <form action="/account/register" method="post" id="register-form" class="login-content__form">
+            <div class="login-content__form-box">
+              <div class="login-left"></div>
+              <div class="login-line"></div>
+              <div class="login-right test"></div>
+              <div class="clearfix"></div>
+              <div class="cor-term">
+                By joining IELTS Online Tests, you agree to our <br>
+                <a data-toggle="modal" data-target="#modal-term" href="javascript:;">Terms of Use</a> and <a data-toggle="modal" data-target="#modal-privacy" href="javascript:;">Privacy Policy</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
     
     <!-- <footer class="footer clearfix">
       <div class="footer-content">

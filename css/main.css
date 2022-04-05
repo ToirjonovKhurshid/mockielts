@@ -2607,9 +2607,72 @@ img {
 }
 
 .login {
-  background: red;
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  background: #f7f7f7;
+}
+
+.login img {
+  display: block;
+  max-width: 161px;
+  margin: 35px auto 63px;
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 1px;
+  color: #284664;
+  margin: 0 0 50px;
+  text-transform: uppercase;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.login-content {
+  position: relative;
+}
+
+.login-content__form-box {
+  max-width: 792px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .cor-term {
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 50px 0 60px;
+}
+
+.login .cor-term a {
+  font-weight: 700;
+  color: #284664;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.login .cor-term a:hover {
+  text-decoration: underline;
 }
 
 /* VISUALLY-HIDDEN */
@@ -2635,8 +2698,71 @@ img {
 }
 
 .login {
-  background: red;
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  background: #f7f7f7;
+}
+
+.login img {
+  display: block;
+  max-width: 161px;
+  margin: 35px auto 63px;
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.41;
+  letter-spacing: 1px;
+  color: #284664;
+  margin: 0 0 50px;
+  text-transform: uppercase;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.login-content {
+  position: relative;
+}
+
+.login-content__form-box {
+  max-width: 792px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login .cor-term {
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #7a7a7a;
+  margin: 50px 0 60px;
+}
+
+.login .cor-term a {
+  font-weight: 700;
+  color: #284664;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.login .cor-term a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
