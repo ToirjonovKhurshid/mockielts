@@ -2605,4 +2605,38 @@ img {
   font-family: "Nunito", sans-serif;
   text-decoration: none;
 }
+
+.login {
+  background: red;
+  width: 100%;
+  height: 100px;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login {
+  background: red;
+  width: 100%;
+  height: 100px;
+}
 /*# sourceMappingURL=main.css.map */
